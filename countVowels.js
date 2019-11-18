@@ -11,12 +11,7 @@ const rl = readline.createInterface({
 
 rl.question("Enter a string to count the vowels... ", (s) => {
     let tally = vowelCounter(s.toLowerCase());
-    console.log("A: " + tally.a);
-    console.log("E: " + tally.e);
-    console.log("I: " + tally.i);
-    console.log("O: " + tally.o);
-    console.log("U: " + tally.u);
-
+    console.log(tally);
 });
 
 // const vowels = ['a', 'e', 'i', 'o', 'u']
