@@ -68,7 +68,7 @@ let brand = new Product(rand(4), 4, 4, 'Paper');
 let prodArray = [brand];
 let inv = new Inventory(prodArray);
 const loopQuestion = () => {
-	rl.question('P & Q... ', b => {
+	rl.question('Name Price and Quality (Space separated)... ', b => {
 		let a = separate(b);
 		let n = a[0];
 		let p = parseInt(a[1]);
