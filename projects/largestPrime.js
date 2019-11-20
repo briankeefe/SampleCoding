@@ -6,7 +6,8 @@ What is the largest prime factor of the number 600851475143 ?
 
 //Check if prime, iterate until sqrt of num
 const isPrime = num => {
-	for (let i = 2, s = Math.sqrt(num); i < s; ++i) {
+	let sqrt = Math.floor(Math.sqrt(num));
+	for (let i = 2; i < sqrt + 1; ++i) {
 		if (num % i === 0) {
 			return false;
 		}
